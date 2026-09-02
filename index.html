@@ -43,18 +43,15 @@
     .page {
       width: min(100%, var(--max-width));
       margin: 0 auto;
-      padding: 18px 20px 0;
+      padding: 12px 20px 0;
       text-align: center;
       overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
     }
 
     .name {
       margin: 0;
       font-family: "RyanCardTypewriter", "Courier New", Courier, monospace;
-      font-size: clamp(2.5rem, 14vw, 4.7rem);
+      font-size: clamp(2.2rem, 12vw, 4.7rem);
       line-height: .92;
       font-weight: 400;
       letter-spacing: .035em;
@@ -62,18 +59,17 @@
     }
 
     .name-rule {
-      width: 120px;
-      height: 4px;
-      margin: 10px auto 16px;
+      width: 100px;
+      height: 3px;
+      margin: 8px auto 12px;
       background: var(--gold);
       transform: rotate(-.8deg);
     }
 
     .photo-wrap {
-      width: min(84vw, 280px);
-      margin: 0 auto 16px;
+      width: min(75vw, 220px);
+      margin: 0 auto 12px;
       filter: drop-shadow(0 6px 9px rgba(26,22,14,.15));
-      flex-shrink: 0;
     }
 
     .photo {
@@ -91,20 +87,18 @@
 
     .links {
       display: grid;
-      gap: 8px;
+      gap: 6px;
       width: 86%;
       margin: 0 auto;
-      flex-grow: 1;
-      padding-bottom: 12px;
     }
 
     .link-button {
-      min-height: 48px;
+      min-height: 44px;
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 11px;
-      padding: 8px 16px;
+      padding: 6px 14px;
       border: 2px solid var(--ink);
       border-radius: 2px;
       background: rgba(248,241,224,.76);
@@ -114,7 +108,7 @@
       letter-spacing: .02em;
       box-shadow: 3px 3px 0 var(--gold);
       transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
     }
 
     .link-button:active {
@@ -132,9 +126,9 @@
     }
 
     .icon {
-      width: 26px;
-      height: 26px;
-      flex: 0 0 26px;
+      width: 24px;
+      height: 24px;
+      flex: 0 0 24px;
       color: var(--gold-dark);
     }
 
@@ -147,13 +141,13 @@
     }
 
     .label-main {
-      font-size: .98rem;
+      font-size: .9rem;
       text-transform: uppercase;
     }
 
     .label-sub {
-      margin-top: 3px;
-      font-size: .76rem;
+      margin-top: 2px;
+      font-size: .7rem;
       font-weight: 400;
       opacity: .72;
       letter-spacing: 0;
@@ -162,9 +156,10 @@
     .city-wrap {
       width: calc(100% + 40px);
       margin-left: -20px;
-      margin-top: 12px;
+      margin-top: 8px;
       line-height: 0;
-      flex-shrink: 0;
+      max-height: 50px;
+      overflow: hidden;
     }
 
     .city {
@@ -178,6 +173,7 @@
       .page { padding-top: 42px; }
       .photo-wrap { width: 340px; }
       .links { width: 82%; }
+      .city-wrap { max-height: none; }
     }
 
     @media (prefers-reduced-motion: reduce) {

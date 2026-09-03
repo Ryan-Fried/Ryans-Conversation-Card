@@ -43,7 +43,7 @@
     .page {
       width: min(100%, var(--max-width));
       margin: 0 auto;
-      padding: 18px 20px 0;
+      padding: 28px 20px 0;
       text-align: center;
       overflow: hidden;
     }
@@ -51,7 +51,7 @@
     .name {
       margin: 0;
       font-family: "RyanCardTypewriter", "Courier New", Courier, monospace;
-      font-size: clamp(2.85rem, 14vw, 4.2rem);
+      font-size: clamp(3.15rem, 16vw, 4.7rem);
       line-height: .92;
       font-weight: 400;
       letter-spacing: .035em;
@@ -61,14 +61,14 @@
     .name-rule {
       width: 120px;
       height: 4px;
-      margin: 10px auto 16px;
+      margin: 14px auto 24px;
       background: var(--gold);
       transform: rotate(-.8deg);
     }
 
     .photo-wrap {
-      width: min(53.2vw, 204px);
-      margin: 0 auto 20px;
+      width: min(84vw, 332px);
+      margin: 0 auto 30px;
       filter: drop-shadow(0 6px 9px rgba(26,22,14,.15));
     }
 
@@ -87,18 +87,18 @@
 
     .links {
       display: grid;
-      gap: 9px;
+      gap: 12px;
       width: 86%;
       margin: 0 auto;
     }
 
     .link-button {
-      min-height: 48px;
+      min-height: 54px;
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 11px;
-      padding: 8px 15px;
+      padding: 10px 16px;
       border: 2px solid var(--ink);
       border-radius: 2px;
       background: rgba(248,241,224,.76);
@@ -125,9 +125,9 @@
     }
 
     .icon {
-      width: 24px;
-      height: 24px;
-      flex: 0 0 24px;
+      width: 26px;
+      height: 26px;
+      flex: 0 0 26px;
       color: var(--gold-dark);
     }
 
@@ -140,13 +140,13 @@
     }
 
     .label-main {
-      font-size: .93rem;
+      font-size: .98rem;
       text-transform: uppercase;
     }
 
     .label-sub {
       margin-top: 3px;
-      font-size: .71rem;
+      font-size: .76rem;
       font-weight: 400;
       opacity: .72;
       letter-spacing: 0;
@@ -155,42 +155,15 @@
     .city-wrap {
       width: calc(100% + 40px);
       margin-left: -20px;
-      margin-top: 20px;
+      margin-top: 36px;
       line-height: 0;
     }
 
     .city {
       display: block;
       width: 100%;
-      height: 108px;
-      object-fit: contain;
-      object-position: center bottom;
+      height: auto;
       opacity: .98;
-    }
-
-
-    @media (max-height: 760px) and (max-width: 520px) {
-      .page { padding-top: 12px; }
-      .name { font-size: clamp(2.55rem, 12.5vw, 3.55rem); }
-      .name-rule { margin-top: 7px; margin-bottom: 11px; }
-      .photo-wrap { width: min(46.9vw, 175px); margin-bottom: 14px; }
-      .links { gap: 7px; }
-      .link-button { min-height: 44px; padding-top: 6px; padding-bottom: 6px; }
-      .label-main { font-size: .88rem; }
-      .label-sub { font-size: .67rem; margin-top: 2px; }
-      .icon { width: 22px; height: 22px; flex-basis: 22px; }
-      .city-wrap { margin-top: 12px; }
-      .city { height: 82px; }
-    }
-
-    @media (max-height: 670px) and (max-width: 520px) {
-      .page { padding-top: 8px; }
-      .name { font-size: 2.35rem; }
-      .name-rule { height: 3px; margin-top: 6px; margin-bottom: 9px; }
-      .photo-wrap { width: min(40.6vw, 150px); margin-bottom: 10px; }
-      .link-button { min-height: 40px; }
-      .city-wrap { margin-top: 8px; }
-      .city { height: 64px; }
     }
 
     @media (min-width: 700px) {
@@ -206,272 +179,7 @@
 
 <style>
 .photo-wrap {
-  width: min(47.88vw, 184px) !important;
-}
-@media (max-height: 760px) and (max-width: 520px) {
-  .photo-wrap { width: min(42.21vw, 158px) !important; }
-}
-@media (max-height: 670px) and (max-width: 520px) {
-  .photo-wrap { width: min(36.54vw, 135px) !important; }
-}
-</style>
-
-
-<style>
-.link-button {
-  width: 56.32% !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-</style>
-
-
-<style>
-html, body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-body {
-  min-height: 100dvh;
-}
-
-.page {
-  width: 100%;
-  max-width: var(--max-width);
-  min-height: 100dvh;
-  max-height: 100dvh;
-  overflow: hidden;
-}
-
-@media (max-width: 699px) {
-  .city-wrap {
-    width: calc(100% + 40px);
-    max-width: none;
-  }
-}
-</style>
-
-
-<style>
-@media (max-width: 699px) {
-  html, body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden !important;
-    overscroll-behavior: none;
-  }
-
-  body {
-    height: 100svh;
-    min-height: 100svh;
-    max-height: 100svh;
-  }
-
-  .page {
-    width: 100%;
-    height: 100svh;
-    min-height: 100svh;
-    max-height: 100svh;
-    padding: max(8px, env(safe-area-inset-top)) 20px max(2px, env(safe-area-inset-bottom));
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden !important;
-  }
-
-  .name {
-    flex: 0 0 auto;
-  }
-
-  .name-rule {
-    flex: 0 0 auto;
-    margin-top: 7px;
-    margin-bottom: 10px;
-  }
-
-  /* Smaller than the original photo, while preserving the exact image/design. */
-  .photo-wrap {
-    width: min(38vw, 150px) !important;
-    flex: 0 0 auto;
-    margin: 0 auto 10px !important;
-  }
-
-  .links {
-    flex: 0 0 auto;
-    gap: 7px;
-  }
-
-  .link-button {
-    min-height: 42px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-
-  /* Keep the skyline on-screen and let it occupy the remaining footer space. */
-  .city-wrap {
-    flex: 1 1 auto;
-    width: calc(100% + 40px);
-    min-height: 54px;
-    margin-left: -20px;
-    margin-top: 8px;
-    display: flex;
-    align-items: flex-end;
-    overflow: hidden;
-  }
-
-  .city {
-    width: 100%;
-    height: min(82px, 12svh);
-    min-height: 54px;
-    object-fit: contain;
-    object-position: center bottom;
-  }
-}
-
-/* Extra compression only for genuinely short phone screens. */
-@media (max-width: 699px) and (max-height: 700px) {
-  .page {
-    padding-top: max(5px, env(safe-area-inset-top));
-  }
-
-  .name {
-    font-size: 2.3rem;
-  }
-
-  .name-rule {
-    height: 3px;
-    margin-top: 5px;
-    margin-bottom: 7px;
-  }
-
-  .photo-wrap {
-    width: min(32vw, 122px) !important;
-    margin-bottom: 7px !important;
-  }
-
-  .links {
-    gap: 5px;
-  }
-
-  .link-button {
-    min-height: 38px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-  }
-
-  .city-wrap {
-    margin-top: 5px;
-    min-height: 46px;
-  }
-
-  .city {
-    height: min(62px, 10svh);
-    min-height: 46px;
-  }
-}
-</style>
-
-
-<style>
-@media (max-width: 699px) {
-  .page {
-    padding-top: max(10px, env(safe-area-inset-top));
-  }
-
-  .name {
-    font-size: clamp(2.9rem, 14vw, 4rem);
-  }
-
-  .name-rule {
-    margin-top: 8px;
-    margin-bottom: 12px;
-  }
-
-  .photo-wrap {
-    width: min(44vw, 178px) !important;
-    margin-bottom: 12px !important;
-  }
-
-  .links {
-    gap: 8px;
-    width: 100%;
-  }
-
-  .link-button {
-    width: 64% !important;
-    min-height: 46px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-  }
-
-  .label-main {
-    font-size: .94rem;
-  }
-
-  .label-sub {
-    font-size: .71rem;
-  }
-
-  .icon {
-    width: 23px;
-    height: 23px;
-    flex-basis: 23px;
-  }
-
-  .city-wrap {
-    margin-top: 9px;
-    min-height: 66px;
-  }
-
-  .city {
-    height: min(94px, 13svh);
-    min-height: 66px;
-  }
-}
-
-/* On short phones, scale only as much as necessary to remain one screen. */
-@media (max-width: 699px) and (max-height: 700px) {
-  .name {
-    font-size: 2.55rem;
-  }
-
-  .name-rule {
-    margin-top: 6px;
-    margin-bottom: 8px;
-  }
-
-  .photo-wrap {
-    width: min(38vw, 145px) !important;
-    margin-bottom: 8px !important;
-  }
-
-  .link-button {
-    width: 62% !important;
-    min-height: 41px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-
-  .links {
-    gap: 6px;
-  }
-
-  .city-wrap {
-    margin-top: 6px;
-    min-height: 50px;
-  }
-
-  .city {
-    height: min(68px, 10svh);
-    min-height: 50px;
-  }
+  width: min(58.8vw, 232.4px) !important;
 }
 </style>
 

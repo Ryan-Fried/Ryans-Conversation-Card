@@ -378,6 +378,103 @@ body {
 }
 </style>
 
+
+<style>
+@media (max-width: 699px) {
+  .page {
+    padding-top: max(10px, env(safe-area-inset-top));
+  }
+
+  .name {
+    font-size: clamp(2.9rem, 14vw, 4rem);
+  }
+
+  .name-rule {
+    margin-top: 8px;
+    margin-bottom: 12px;
+  }
+
+  .photo-wrap {
+    width: min(44vw, 178px) !important;
+    margin-bottom: 12px !important;
+  }
+
+  .links {
+    gap: 8px;
+    width: 100%;
+  }
+
+  .link-button {
+    width: 64% !important;
+    min-height: 46px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  .label-main {
+    font-size: .94rem;
+  }
+
+  .label-sub {
+    font-size: .71rem;
+  }
+
+  .icon {
+    width: 23px;
+    height: 23px;
+    flex-basis: 23px;
+  }
+
+  .city-wrap {
+    margin-top: 9px;
+    min-height: 66px;
+  }
+
+  .city {
+    height: min(94px, 13svh);
+    min-height: 66px;
+  }
+}
+
+/* On short phones, scale only as much as necessary to remain one screen. */
+@media (max-width: 699px) and (max-height: 700px) {
+  .name {
+    font-size: 2.55rem;
+  }
+
+  .name-rule {
+    margin-top: 6px;
+    margin-bottom: 8px;
+  }
+
+  .photo-wrap {
+    width: min(38vw, 145px) !important;
+    margin-bottom: 8px !important;
+  }
+
+  .link-button {
+    width: 62% !important;
+    min-height: 41px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  .links {
+    gap: 6px;
+  }
+
+  .city-wrap {
+    margin-top: 6px;
+    min-height: 50px;
+  }
+
+  .city {
+    height: min(68px, 10svh);
+    min-height: 50px;
+  }
+}
+</style>
+
 </head>
 <body>
   <main class="page">
